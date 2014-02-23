@@ -1,0 +1,16 @@
+09:33:58	Запись с идентификатором:  не существует. Таблица: movie
+FILE:	/home/alextcy/www/mra.local/modules/Movie/Model/Movie.php
+LINE:	31
+
+09:35:22	Нет такого фильма
+FILE:	/home/alextcy/www/mra.local/modules/Movie/Controller/InfoController.php
+LINE:	22
+
+10:18:22	Запись с идентификатором:  не существует. Таблица: movie
+FILE:	/home/alextcy/www/mra.local/modules/Movie/Model/Movies.php
+LINE:	31
+
+10:19:12	Запись с идентификатором: 100 не существует. Таблица: movie
+FILE:	/home/alextcy/www/mra.local/modules/Movie/Model/Movies.php
+LINE:	31
+

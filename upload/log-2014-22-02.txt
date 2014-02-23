@@ -1,0 +1,8 @@
+17:34:14	Нет рецензий в очереди.
+FILE:	/home/alextcy/www/mra.local/cron/graber.php
+LINE:	47
+
+17:34:17	Нет рецензий в очереди.
+FILE:	/home/alextcy/www/mra.local/cron/graber.php
+LINE:	47
+
