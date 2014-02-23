@@ -1,0 +1,239 @@
+index:
+  path:      /
+  defaults:  { _controller: Index:Index:index }
+
+#----MOVIE---------------------------------------
+movie_info:
+    path: /movie/{alias}
+    defaults:  { _controller: Movie:Info:index }
+
+#----REVIEW---------------------------------------    
+rebiew_info:
+    path: /review/{id}
+    defaults:  { _controller: Review:Index:index }    
+    requirements:
+        subject_id:  \d+
+    
+#----AUTHOR---------------------------------------        
+
+author:
+    path: /author/{id}
+    defaults:  { _controller: Author:Index:index }
+    requirements:
+        subject_id:  \d+
+
+#----SOURCE---------------------------------------        
+
+source:
+    path: /source/{id}
+    defaults:  { _controller: Source:Index:index }    
+    requirements:
+        subject_id:  \d+
+
+#----API-----------------------------------------
+api_subjects:
+    path:      /api/subjects
+    defaults:  { _controller: Api:Subject:list }
+    requirements:
+        _method: GET
+
+api_files_id:
+    path:      /api/files/{subject_id}
+    defaults:  { _controller: Api:Files:get }
+    requirements:
+        subject_id:  \d+
+        _method: GET
+        
+api_files:
+    path:      /api/files
+    defaults:  { _controller: Api:Files:list }    
+    requirements:
+      _method: GET
+    
+api_files_add:
+    path:      /api/files
+    defaults:  { _controller: Api:Files:add }    
+    requirements:
+      _method: POST
+    
+api_files_edit:
+    path:      /api/files/{subject_id}
+    defaults:  { _controller: Api:Files:edit, subject_id:0 }    
+    requirements:
+        subject_id:  \d+
+        _method: PUT
+
+api_files_delete:
+    path:      /api/files/{subject_id}
+    defaults:  { _controller: Api:Files:delete, subject_id:0 }    
+    requirements:
+        subject_id:  \d+
+        _method: DELETE
+
+#------------------------------------------
+
+files:
+    path:   /files
+    defaults:  { _controller: Subject:File:index }
+    requirements:
+        _method: GET                        
+
+files_add:
+    path:   /files/add
+    defaults:  { _controller: Subject:File:add }
+    
+files_delete:
+    path:   /files/delete
+    defaults:  { _controller: Subject:File:delete }    
+    requirements:
+        _method: POST
+        
+files_upload:
+    path:   /files/upload
+    defaults:  { _controller: Subject:File:upload }
+    requirements:
+        _method: POST
+
+#----DOMAIN-------------------------------        
+domains:
+    path:   /domains
+    defaults:  { _controller: Domain:Index:index }
+    requirements:
+        _method: GET
+        
+domains_add_form:
+    path:   /domains/add
+    defaults:  { _controller: Domain:Add:index }
+    
+domains_add_ajax:
+    path:   /domains/add/ajax
+    defaults:  { _controller: Domain:AddAjax:index }    
+    requirements:
+        _method: POST
+
+domains_edit_form:
+    path:   /domains/edit/{id}
+    defaults:  { _controller: Domain:Index:edit }
+    requirements:
+        id:  \d+
+
+domains_set_queue:
+    path:   /domains/set/queue 
+    defaults:  { _controller: Domain:Index:setToQueue }    
+    requirements:
+        _method: POST
+
+ 
+domains_deploy:
+    path:   /domains/deploy
+    defaults:  { _controller: Domain:Deploy:deploy }
+    requirements:
+        _method: POST
+        
+domains_deploy_decline:
+    path:   /domains/deploydecline
+    defaults:  { _controller: Domain:Deploy:deployDecline }
+    requirements:
+        _method: POST        
+
+domains_deploy_dns:
+    path:   /domains/deploy/dns
+    defaults:  { _controller: Domain:Deploy:redeployDns }
+    requirements:
+        _method: POST
+
+domains_redirect:
+    path: /domains/redirect
+    defaults:  { _controller: Domain:Redirect:index }
+
+#-----------------------------------------    
+
+        
+subjects:
+    path:   /subjects
+    defaults:  { _controller: Subject:Index:index }
+    requirements:
+        _method: GET
+        
+subjects_restriction_location:
+    path:   /subjects/{id}/restriction/location
+    defaults:  { _controller: Subject:Restriction:location }
+    requirements:
+        id:  \d+
+        
+subjects_restriction_domainzone:
+    path:   /subjects/{id}/restriction/domainzone
+    defaults:  { _controller: Subject:Restriction:domainzone }
+    requirements:
+        id:  \d+        
+        
+subjects_restriction_registrar:
+    path:   /subjects/{id}/restriction/registrar
+    defaults:  { _controller: Subject:Restriction:registrar }
+    requirements:
+        id:  \d+
+        
+        
+#-------------------------------------------
+registrars:
+    path:   /registrars
+    defaults:  { _controller: Registrar:Index:index }
+    requirements:
+        _method: GET
+        
+registrars_toglestatus:
+    path:   /registrars/togleStatus
+    defaults:  { _controller: Registrar:Index:togleStatus }
+    requirements:
+        _method: POST
+        
+#------------------------------------------
+generator:
+    path: /generator
+    defaults:  { _controller: Generator:Preset:index }
+
+generator_presets_add:
+    path: /generator/presets/add
+    defaults:  { _controller: Generator:Preset:add }
+    
+generator_presets_edit:
+    path: /generator/presets/edit/{id}
+    defaults:  { _controller: Generator:Preset:edit }
+    requirements:
+        id:  \d+
+
+generator_presets_save:
+    path: /generator/presets/save
+    defaults:  { _controller: Generator:Preset:save }
+    requirements:
+        _method: POST        
+    
+generator_presets_positions:
+    path: /generator/presets/positions
+    defaults:  { _controller: Generator:Preset:savePositions }    
+    requirements:
+        _method: POST        
+
+generator_presets_delete:
+    path: /generator/presets/delete
+    defaults:  { _controller: Generator:Preset:delete }    
+    requirements:
+        _method: POST
+        
+generator_presets_copy:
+    path: /generator/presets/copy
+    defaults:  { _controller: Generator:PresetCopy:index }    
+    requirements:
+        _method: POST        
+        
+generator_combinations_domain:
+    path: /generator/combinations/domain
+    defaults:  { _controller: Generator:Combinations:domain }    
+    requirements:
+        _method: POST                
+
+generator_combinations_column:
+    path: /generator/combinations/column
+    defaults:  { _controller: Generator:Combinations:column }    
+    requirements:
+        _method: POST

@@ -1,0 +1,14 @@
+
+.content-block {
+    line-height: 1.6em;
+}
+
+.content-block p {
+    font-size: 14pt;
+    /*font-family: serif;*/
+
+}
+
+.poster-mini {
+    width: 80px;
+}
