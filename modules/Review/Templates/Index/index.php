@@ -9,7 +9,7 @@
             <div class="span10 content-block">
                 
                     <blockquote>
-                        <p><a href="/author/<?=$Review->author_alias?>" title="Рецензии критика"><?=$Review->author_name?></a></p>
+                        <p><a href="/author/<?=$Review->author_id?>" title="Рецензии критика"><?=$Review->author_name?></a></p>
                         <small>Оригинал: <a href="<?=$Review->original_url?>"><?=$Review->source_name?></a> </small>
                         <small>Дата публикации: <?=$Review->original_date?> </small>
                     </blockquote>

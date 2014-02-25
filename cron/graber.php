@@ -60,6 +60,8 @@ try {
     //преобразование кодировок
     $response['output'] = iconv(ConfigParse::$reviewSources[$domain]['encoding'], 'UTF-8', $response['output']);
     $htmlContent = mb_convert_encoding($response['output'], 'HTML-ENTITIES', 'UTF-8');
+    
+    //var_dump($response);exit;
        
     $Crawler = new Crawler($htmlContent);
     $NodesList = $Crawler->filterXPath(ConfigParse::$reviewSources[$domain]['xpath']);
@@ -74,7 +76,12 @@ try {
 
             $imageUrlData = parse_url($NodeElem->getAttribute('src'));
             if(!array_key_exists('host', $imageUrlData)) {
-                $imageUrl = 'http://'.$domain. $NodeElem->getAttribute('src');
+                if($domain == 'www.exler.ru') {
+                    $imageUrl = 'http://'.$domain. '/films/'. $NodeElem->getAttribute('src');
+                } else {
+                    $imageUrl = 'http://'.$domain. $NodeElem->getAttribute('src');
+                }
+                
             } else {
                 $imageUrl = $NodeElem->getAttribute('src');
             }
