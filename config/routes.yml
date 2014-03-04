@@ -8,11 +8,15 @@ movie_info:
     defaults:  { _controller: Movie:Info:index }
 
 #----REVIEW---------------------------------------    
-rebiew_info:
+review_info:
     path: /review/{id}
     defaults:  { _controller: Review:Index:index }    
     requirements:
         subject_id:  \d+
+
+review_queue_add:
+    path: /review/queue/add
+    defaults:  { _controller: Review:Queue:add }    
     
 #----AUTHOR---------------------------------------        
 
