@@ -1,6 +1,7 @@
 var Main = {};
-var Domain = {};
-var Generator = {};
+//var Domain = {};
+//var Generator = {};
+var ReviewQueue = {};
 
 /**
  * Отмечает группу чекбоксов или снимает метки.

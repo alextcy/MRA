@@ -18,6 +18,12 @@ review_queue_add:
     path: /review/queue/add
     defaults:  { _controller: Review:Queue:add }    
     
+review_queue_search:
+    path: /review/queue/search
+    defaults:  { _controller: Review:Queue:search }
+    requirements:
+        _method: POST
+    
 #----AUTHOR---------------------------------------        
 
 author:

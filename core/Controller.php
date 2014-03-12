@@ -47,6 +47,7 @@ abstract class Controller
         $response['result'] = false;
         $response['error']  = $errorText;
         
+        header('Content-Type: application/json');
         echo json_encode($response); 
         exit();
     }
@@ -62,6 +63,7 @@ abstract class Controller
             $response = array_merge($response, $data);
         }
         
+        header('Content-Type: application/json');
         echo json_encode($response); 
         exit();
     }
