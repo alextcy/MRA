@@ -47,6 +47,31 @@ class ConfigParse
             'xpath'    => "//div[@id='article']//p[not(@align = 'center')] | //div[@id='article']//p[not(@align = 'center')]//img",
             'encoding' => 'WINDOWS-1251'
         ),
+        'kino.open.ua' => array(
+            'xpath'    => "//div[@id='text_body']/p[not(@align='right')] | //div[@id='text_body']/p[not(@align='right')]//img",
+            'encoding' => 'WINDOWS-1251'
+        ),
+        'open.ua' => array(
+            'xpath'    => "//div[@class='item']/div[@class='body']/div//p | //div[@class='item']/div[@class='body']/div//p//img",
+            'encoding' => 'UTF-8'
+        ),
+        'www.filmz.ru' => array(
+            'xpath'    => "//div[@class='main-block']/div[@class='content br5']//div[@class='text'][1]//p | //div[@class='main-block']/div[@class='content br5']//img[@class='maximgwidth br5']",
+            'encoding' => 'WINDOWS-1251'
+        ),
+        //текст сплошным куском
+        'www.kinonews.ru' => array(
+            'xpath'    => "//div[@class='textart'] | //div[@class='block-main']/div[@class='block-page']//div[@style='float:left;width:190px;']/img",
+            'encoding' => 'WINDOWS-1251'
+        ),
+        //нет даты публикации
+        'critic.by' => array(
+            'xpath'    => "//div[@class='recenz']/p | //div[@class='tizer'][1]//div[@class='block_tizer_full']/img[not(@alt='')]",
+            'encoding' => 'UTF-8'
+        ),
+        
+        
+        
     );
     
 }

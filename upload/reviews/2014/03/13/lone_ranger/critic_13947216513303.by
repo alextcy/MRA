@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+				<title>Кинокритик: ваш проводник в мире кино. Рецензии на фильмы. Обзоры фильмов. Кинокритика</title>
+		<link rel="alternate" type="application/rss+xml" title="Кинокритик" href="http://critic.by/rss/rss-1.xml">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		
+		<meta name="Keywords" content="">
+		<meta name="Description" content="Рецензии и отзывы о фильмах на сайте Кинокритик. Обзор фильмов">
+		<meta name="robots" content="index,follow">
+		
+		<base href="http://critic.by"> 
+		
+		<script src="/templates/kino/js/jquery.js" type="text/javascript"></script>
+		
+		<!-- Le styles -->
+		<link href="/templates/kino/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/templates/kino/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<script src="/templates/kino/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->	
+		
+		<link href="/templates/kino/css/style.css" rel="stylesheet" type="text/css" media="screen">
+		
+		<link rel="stylesheet" href="/templates/kino/js/colorbox/colorbox.css" type="text/css">
+		<script src="/templates/kino/js/colorbox/jquery.colorbox-min.js" type="text/javascript"></script> 
+		<script src="/templates/kino/js/humanized/msgGrowl.js"></script>
+		<link href="/templates/kino/js/humanized/msgGrowl.css" rel="stylesheet">
+		<script type="text/javascript" src="/templates/kino/js/underscore-min.js"></script>
+		<script type="text/javascript" src="/templates/kino/js/backbone-min.js"></script>
+		<script type="text/javascript" src="/templates/kino/js/jquery.form.js"></script>   
+		<script src="/templates/kino/js/jquery-toptop.js" type="text/javascript"></script>
+		
+		<script src="/templates/kino/js/tool.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var ave_path = "/";
+			var ave_theme = "kino";  
+		</script>   
+		
+		<!--<link rel="canonical" href="http://critic.by/"/>-->
+	</head>
+	
+	<body>
+		
+<noscript>
+  <link href="/templates/kino/css/ie6bar.css" rel="stylesheet">
+  <div id="block-arwm-ie6bar-ie6bar">
+  <div class="ie6bar-close"><a href="#" class="png_bg" onclick="document.getElementById('block-arwm-ie6bar-ie6bar').style.display='none';return false;" rel="nofollow"> </a></div>
+  <div class="ie6bar-video">Что такое браузер?<br><a href="http://www.whatbrowser.org/ru/" target="_blank" rel="nofollow">Посмотреть видео<span> </span></a></div>
+    <div class="ie6bar-title">Для правильной работы сайта нужно включить JavaScript. <p>Если этого не сделать часть функций нашего сайта окажутся вам не доступными.<br> Если ваш браузер не поддерживает JavaScript, мы рекомендуем установить новый браузер.</p></div>
+  <table class="ie6bar-icons-table">
+    <tr>
+      <td><a href="http://www.google.com/chrome?hl=ru" target="_blank" rel="nofollow"><span class="ie6bar-icons ie6bar-icon-chrome png_bg"></span>Google Chrome</a></td>
+      <td><a href="http://www.apple.com/ru/safari/" target="_blank" rel="nofollow"><span class="ie6bar-icons ie6bar-icon-safari png_bg"></span>Apple Safari</a></td>
+      <td><a href="http://www.mozilla-europe.org/ru/firefox/" target="_blank" rel="nofollow"><span class="ie6bar-icons ie6bar-icon-firefox png_bg"></span>Mozilla Firefox</a></td>
+      <td><a href="http://ru.opera.com/" target="_blank" rel="nofollow"><span class="ie6bar-icons ie6bar-icon-opera png_bg"></span>Opera</a></td>
+      <td><a href="http://www.microsoft.com/rus/windows/internet-explorer/" target="_blank" rel="nofollow"><span class="ie6bar-icons ie6bar-icon-explorer png_bg"></span>Internet Explorer</a></td>
+    </tr>
+  </table>  
+</div>
+</noscript>
+		<!-- <div class="display_notice">
+Главред бросил курить. Не кури и ты.
+</div> -->
+				<div class="container">
+			
+			<header>
+				<div class="top-main">
+					<div class="pull-left top-main-logo">
+													<img src="/templates/kino/images/logo.png" alt="Кинокритик: ваш проводник в мире кино">
+												<div class="podheads">
+							<script src="/modules/search/style/search.js" type="text/javascript"></script>
+<link href="/modules/search/style/style.css" rel="stylesheet" type="text/css" media="screen">
+
+<form method="get" action="/index.php" class="short_search_form">
+    <input type="hidden" name="module" value="search">
+
+	<div class="search-block overflow">
+		<label for="search_index">Найти рецензию на фильм:</label>
+		<div class="pull-left inp">
+			<input name="query" type="text" id="search_index" autofocus="autofocus" value="" autocomplete="off">
+			<input type="hidden" name="ts" value="1">
+		</div>
+
+		<span class="pull-left button-in-form">
+			<button type="submit" class="button-form selector-white-rounded"><span><span>Найти</span></span></button>
+		</span>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="search-example">Например: <a href="/komediya/ostrov-vezeniya/" title="Фильм Остров везения" class="tiptip media popupfade" data-id="996">Остров везения</a></div>
+</form>
+
+<div id="searchDialog" class="lightbox">
+	<div class="close"></div>
+	<h3>Поиск на Кинокритике</h3>
+	<span class="shortcutTip">Начните печатать...</span>
+	<form action="/index.php" class="short_search_form2">
+		<input type="hidden" name="module" value="search">
+		<input type="text" name="query" id="q" autocomplete="off"  data-tour-id="searchinput"  autofocus="autofocus">
+	</form>
+	<p id="noResults" class="hide">В поиске не удалось ничего найти. Попробуйте поменять фразу.</p>
+	<ul id="searchResults" class=""></ul>
+	<p id="moreResults" class="hide">В поиске представлены не все результаты, <a href="">посмотреть все</a>.</p>
+</div>						</div>
+					</div>
+					
+					<div class="pull-right top-main-login">
+						<script type="text/javascript" src="/templates/kino/js/auth.js"></script> 
+
+<div class="hidden status_login">2</div>
+
+<div class="welcom_message">Вход на сайт</div><div class="carbon"></div><div class="pull-right"><script type="text/template" id="start"><form method="post" action="/index.php" class="login_form"><input name="module" value="login" type="hidden"><input name="action" value="login" type="hidden"><div class="control-group"><label class="control-label" for="user_login">Логин</label><div class="pull-right">(<a href="/login/register/">зарегистрироваться</a>)</div><div class="controls"><input type="text" id="user_login" name="user_login" placeholder="Логин" class="loginuser"></div></div><div class="control-group"><label class="control-label" for="user_pass">Пароль</label><div class="pull-right">(<a href="/#!/password_lost" rel="nofollow">напомнить пароль</a>)</div><div class="controls"><input type="text" id="user_pass" name="user_pass" placeholder="Пароль" class="loginuser"></div></div><div class="control-group"><div class="controls"><label class="checkbox"><input tabindex="3" name="SaveLogin" type="checkbox" value="1"> Запомнить меня</label><div class="button-in-form pull-right"><button type="button" class="button-form try_login"><span><span>Войти</span></span></button></div></div></div></form></script><script type="text/template" id="password_lost"><p>Как, уже забыли пароль? Не волнуйтесь, мы его вам напомним.</p><form method="post" action="/index.php" class="login_form"><div class="control-group"><label class="control-label" for="f_mailreminder">Ваш почтовый ящик</label><div class="pull-right">(<a href="/#!/login" rel="nofollow">я вспомнил</a>)</div><div class="controls"><input type="text" id="f_mailreminder" name="f_mailreminder" placeholder="Ваш почтовый ящик" class="loginuser"></div></div><input type="hidden" name="module" value="login"><input type="hidden" name="action" value="passwordreminder"><input type="hidden" name="sub" value="send"><div class="button-in-form simple-form"><button type="button" class="button-form try_password"><span><span>Получить новый пароль</span></span></button></div></form></script><script type="text/template" id="reject_email"><p>Проверьте свой почтовый ящик, там должно быть письмо от нас, с кодом подтверждения.</p><form method="post" action="/index.php" class="login_form"><div class="control-group"><label class="control-label" for="emc">Проверочный код</label></div><div class="controls"><input type="text" id="emc" name="emc" placeholder="Проверочный код" class="loginuser"></div></div><input type="hidden" name="module" value="login"><input type="hidden" name="action" value="register"><input type="hidden" name="sub" value="registerfinal"><div class="button-in-form simple-form"><button type="button" class="button-form try_reject_check"><span><span>Проверить код</span></span></button></div></form></script><script type="text/template" id="profile"><div class="loginform"><a href="/user/<%= inner_subject.user_id %>/" title="Страница с вашей информацией" class="thumbnail pull-right"><img src="/uploads/users/no-avatar.png" alt="" width="85px"></a><ul class="unstyled"><li><span class="padding-for-icons panel-config"><a href="/login/edit/">Настройки</a></span></li><li><span class="padding-for-icons pin"><a href="#" data-toggle="popover" data-placement="bottom" title="Меню пользователя">Профиль</a></span><div class="forpopover hidden"><ul class="unstyled"><li><span class="padding-for-icons author-card"><a href="/user/<%= inner_subject.user_id %>/">Ваш профиль</a></span></li><li><span class="padding-for-icons votes"><a href="/votes/">Оценки</a></span></li><li><span class="padding-for-icons send-mail"><a href="/message/#!/received">Сообщения</a></span></li><li><span class="padding-for-icons bookmarks"><a href="/user/bookmarks/">Закладки</a></span></li><li><span class="padding-for-icons comments"><a href="/user/<%= inner_subject.user_id %>/comments/">Комментарии</a></span></li><li><span class="padding-for-icons subscribe"><a href="/user/sublist/">Подписки</a></span></li><li><span class="padding-for-icons views"><a href="/recently-viewed/">История просмотров</a></span></li></ul></div></li><li><span class="padding-for-icons geotag"><a href="/reklama/">Рекламодателям</a></span></li></ul><a href="/#!/exit" class="btn pull-right try_exit" rel="nofollow">Выйти</a><ul class="unstyled"><%= inner_subject.link %></ul></div></script><script type="text/template" id="error"><p>Произошла ошибка, нужно попробовать <a href="/#!/" rel="nofollow">войти снова</a>.</p></script><div id="work_block"><div class="respon respon-block respon-block-bg"><img src="/templates/kino/images/load.gif" alt="[...Ждите...]"> [...Ждите...]</div></div></div>					</div>
+					<div class="clearfix"></div>
+				</div>
+			</header>
+			
+			<div class="container">
+				<div class="middle-left pull-left">
+					
+					<div class="middle_bar">
+						<div class="middle_bar_corner">
+							<div class="twitter">
+								<a href="http://twitter.com/criticby" title="Кинокритик в Twitter" target="_blank" rel="nofollow" class="tiptip"><img src="/templates/kino/images/twitter.png" alt="Кинокритик в Twitter"></a>
+							</div>
+							
+							<div class="zago">Жанр <a href="/rss/rss-1.xml" target="blank" title="RSS лента новостей"><img src="/modules/rss/templates/feed.gif" alt="RSS лента новостей"></a></div>
+							<div class="context">- какой вам больше нравится</div>
+							<div class="navigator"><div class="pull-left">
+	<ul class="unstyled">
+		<li><a href="/anime/" title="Все фильмы в категории Аниме">Аниме</a></li>
+		<li><a href="/boevik/" title="Все фильмы в категории Боевик">Боевик</a></li>
+		<li><a href="/vestern/" title="Все фильмы в категории Вестерн">Вестерн</a></li>
+		<li><a href="/war/" title="Все фильмы в категории Война">Война</a></li>
+		<li><a href="/detektiv/" title="Все фильмы в категории Детектив">Детектив</a></li>
+		<li><a href="/drama/" title="Все фильмы в категории Драма">Драма</a></li>
+		<li><a href="/istoricheskij/" title="Все фильмы в категории Исторический">Исторический</a></li>
+		<li><a href="/komediya/" title="Все фильмы в категории Комедия">Комедия</a></li>
+		<li><a href="/melodrama/" title="Все фильмы в категории Мелодрама">Мелодрама</a></li>
+	</ul>
+</div>
+<div class="pull-left">
+	<ul class="unstyled">
+		<li><a href="/multfilm/" title="Все фильмы в категории Мультфильмы">Мультфильм</a></li>
+		<li><a href="/myuzikl/" title="Все фильмы в категории Мюзикл">Мюзикл</a></li>
+		<li><a href="/priklyucheniya/" title="Все фильмы в категории Приключения">Приключения</a></li>
+		<li><a href="/serial/" title="Все фильмы в категории Сериалы">Сериал</a></li>
+		<li><a href="/triller/" title="Все фильмы в категории Триллер">Триллер</a></li>
+		<li><a href="/uzhasy/" title="Все фильмы в категории Ужасы">Ужасы</a></li>
+		<li><a href="/fantastika/" title="Все фильмы в категории Фантастика">Фантастика</a></li>
+		<li><a href="/katastrofa/" title="Все фильмы в категории Фильм-катастрофа">Фильм-катастрофа</a></li>
+		<li><a href="/fentezi/" title="Все фильмы в категории Фэнтези">Фэнтези</a></li>
+	</ul>
+</div></div>
+						</div>
+					</div>
+					
+					<div class="middle_bar_media corner">
+						<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2959260899036608";
+/* critic3 */
+google_ad_slot = "6254267973";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>					</div>
+					
+					<div class="middle_bar">
+						<div class="middle_bar_corner">
+							<div class="zago">Кинорейтинг</div>
+							<div class="context">- по версии читателей</div>
+							<table class="table table-striped"><thead><tr><th>Название</th><th class="first-coll">Баллы</th></tr></thead><tbody><tr class="media popupfade" data-id="258"><td><a href="/drama/forrest-gump/" title="Форрест Гамп">Форрест Гамп</a> Forrest Gump</td><td>8.347</td></tr><tr class="media popupfade" data-id="437"><td><a href="/drama/fight-club/" title="Бойцовский клуб">Бойцовский клуб</a> Fight Club</td><td>8.255</td></tr><tr class="media popupfade" data-id="106"><td><a href="/anime/wall-e/" title="ВАЛЛ-И">ВАЛЛ-И</a> WALL-E</td><td>8.242</td></tr><tr class="media popupfade" data-id="149"><td><a href="/uzhasy/silent-hill/" title="Сайлент Хилл">Сайлент Хилл</a> Silent Hill</td><td>8.240</td></tr><tr class="media popupfade" data-id="184"><td><a href="/istoricheskij/ip-man/" title="Ип Ман">Ип Ман</a> Yip Man</td><td>8.176</td></tr><tr class="media popupfade" data-id="369"><td><a href="/fantastika/avatar/" title="Аватар">Аватар</a> Avatar</td><td>8.174</td></tr><tr class="media popupfade" data-id="167"><td><a href="/serial/master-i-margarita/" title="Мастер и Маргарита">Мастер и Маргарита</a> </td><td>8.147</td></tr></tbody></table><div class="nopadd pull-right"><p><img src="/templates/kino/images/tags.jpg" alt="Топ лучших фильмов на сайте"> <a href="/topfilm/" title="Топ лучших фильмов на сайте">весь рейтинг</a></p></div>
+						</div>
+					</div>
+										
+					<div class="map-adres">              
+						<div class="map-adress-allwrap">               
+							<div class="title-b">                    
+								<h3>Для авторов</h3>
+							</div>
+							<div class="wrap-aderes">                     
+								<p>Хотите принять участие в развитии проекта?</p>
+								<a href="/contacts/" class="subfoot selector-red-rounded"><span><span>Добавить рецензию</span></span></a>      
+							</div>
+						</div>
+						<div class="bottom-cover"></div>
+					</div>
+					
+					<div class="middle_bar">
+						<div class="middle_bar_corner">
+							<div class="zago">Наши новости</div>
+							<div class="context">- новости Кинокритика</div>
+							<div class="media">
+<div class="media-heading">
+	<a href="/news/25-12-2013/">Итоги XIII конкурса «Золотой сайт»</a>
+</div>
+<div class="time">25 декабря 2013 в 12:59</div>
+<p>17 декабря 2013 г. были подсчитаны голоса и объявлены победители конкурса.</p><div class="media-heading">
+	<a href="/news/06-11-2013/">Какую кинокартину можно назвать &laquo;Лучший фильм всех времен&raquo;</a>
+</div>
+<div class="time">06 ноября 2013 в 10:59</div>
+<p>За почти 120 лет, прошедших с момента возникновения кинематографа, было создано немало шедевров, вызывающих смех и слезы, чувство сострадания, патриотизма, заставляющих сопереживать вымышленным героям и задумываться над вопросами, волнующими человека во все времена.</p><div class="media-heading">
+	<a href="/news/09-10-2013/">VII Международный кинофестиваль «Русское зарубежье»</a>
+</div>
+<div class="time">09 октября 2013 в 17:02</div>
+<p>7 ноября 2013 года в Доме русского зарубежья имени Александра Солженицына состоится торжественная церемония открытия VII Международного кинофестиваля «Русское зарубежье».</p>
+</div>
+
+<div class="nopadd pull-right">
+<p><img src="/templates/kino/images/news.jpg" alt="Все новости проекта"> <a href="/news/" title="Все новости проекта">все новости</a></p>
+</div>
+						</div>
+					</div>
+					
+					<div class="middle_bar_media corner">
+						<div class="" style="width:240px;margin:auto">
+<!-- RotaBan.ru Ad Code -->
+<script type="text/javascript">
+(function(){
+    var rb = document.createElement('script');
+        d = new Date();
+    d.setHours(0);
+    d.setMinutes(0);
+    d.setSeconds(0);
+    d.setMilliseconds(0);
+    rb.type = 'text/javascript';
+    rb.async = true;
+    rb.src = '//s1.rotaban.ru/rotaban.js?v=' + d.getTime();
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(rb);
+})();
+</script>
+<!-- END RotaBan.ru Ad Code -->
+<!-- RotaBan.ru Zone Code -->
+<div id="rotaban_199996" class="rbrocks rotaban_a74d7dde5e824ab682d00602eb38f4eb"></div>
+<!-- END RotaBan.ru Zone Code -->							
+							
+						</div>
+						<!-- <span>Вы можете <a href="/reklama/" rel="nofollow">разместить рекламу</a><br /> на нашем сайте</span> -->
+					</div>
+					
+					<div class="middle_bar">
+						<div class="middle_bar_corner">
+							<div class="zago">Кинорейтинг</div>
+							<script type="text/javascript" src="/templates/kino/js/modules/poll.js"></script> 
+
+<div class="inner_block">
+	<script type="text/template" id="start_poll">
+		<div class="context"><%= inner_subject.polltitle %></div>
+		<input value="<%= inner_subject.pollid %>" id="formid" type="hidden">
+		<div id="pollstate"><%= inner_subject.error %></div>
+		<div id="containerpoll"><%= inner_subject.pollitems %></div>
+	</script>
+	
+	<script type="text/template" id="error_poll">
+		<%= inner_subject.respons %>
+	</script>
+		
+	<div id="work_poll"><div class="respon respon-block respon-block-bg"><img src="/templates/kino/images/load.gif" alt="[...Ждите...]"> [...Ждите...]</div></div>
+	
+	<script type="text/template" id="start_load">
+		<div class="respon respon-block respon-block-bg try_poll"><img src="/templates/kino/images/load.gif" alt="[...Ждите, загружаем опрос...]"> [...Ждите, загружаем опрос...]</div> 
+	</script>
+</div>							<div class="nopadd pull-right">
+								<p>
+									<img src="/templates/kino/images/news.jpg" alt="Архив опросов">
+									<a href="/poll/archives/">архив опросов</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="middle_bar_context">
+						<a href="http://torrentfilms.net">скачать фильмы через торрент</a> <BR> <a href="http://www.videoslon.ru/serv__idP_10.html">создание презентаций</a> <BR> 					</div>
+					
+				</div>
+				<div class="middle-right">
+					<h1>Кинокритик: ваш проводник в мире кино</h1>
+<div class="context">- что нового на сайте?</div>
+<div class="middle_context"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2959260899036608";
+/* critic */
+google_ad_slot = "6351463175";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<ul class="media-list"><li class="media popupfade" data-id="1000">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/yolki-3.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Ёлки 3"></div>
+		<h2><a href="/komediya/yolki-3/" title="Ёлки 3">Ёлки 3</a></h2>
+		<h3 class='dopeng'></h3>
+		<span class="reiting-inline"> 7.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/komediya/" title="Все рецензии в рубрике Комедия">Комедия</a> опубликовано вчера в 11:22
+		</div>
+		<p>Родители маленькой Насти собираются в канун Нового года её собаку в 
+Лондон. От отчаяния девочка решает использовать Интернет. 
+Воспользовавшись социальной сетью, Настя запускает «Бумеранг добра», 
+который должен совершить очень длительный полет, чтобы вернутся и 
+исполнить все желания.</p>
+	</div>
+</li><li class="media popupfade" data-id="1001">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/this-is-the-end.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Конец света 2013: Апокалипсис по-голливудски / This Is the End"></div>
+		<h2><a href="/komediya/this-is-the-end/" title="Конец света 2013: Апокалипсис по-голливудски">Конец света 2013: Апокалипсис по-голливудски</a></h2>
+		<h3 class='dopeng'>This Is the End</h3>
+		<span class="reiting-inline"> 8.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/komediya/" title="Все рецензии в рубрике Война">Война</a> опубликовано 11 марта 2014 в 12:48
+		</div>
+		<p>Джей Барушель приезжает в гости в Лос-Анджелес к своему другу Сету 
+Рогену. Парни решают оторваться по полной и попадают на вечеринку к 
+Джеймсу Франко. В самый разгар веселья начинает творится черти-что. 
+Кругом огонь, гигантские воронки в земле, одни люди гибнут, других 
+уносит куда то в небо. Выживших осталось не много...</p>
+	</div>
+</li><li class="media popupfade" data-id="999">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/inside-man.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Не пойман – не вор / Inside Man"></div>
+		<h2><a href="/triller/inside-man/" title="Не пойман – не вор">Не пойман – не вор</a></h2>
+		<h3 class='dopeng'>Inside Man</h3>
+		<span class="reiting-inline"> 8.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/triller/" title="Все рецензии в рубрике Триллер">Триллер</a> опубликовано 11 марта 2014 в 11:44
+		</div>
+		<p>Фрезьера — крутой полицейский, которому предстоит столкнуться с 
+хитрым грабителем банков. Ситуация осложняется тем, что грабители хорошо
+ подготовились и взяли в заложники сотрудников и посетителей банка.</p>
+	</div>
+</li><li class="media popupfade" data-id="976">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/phantom-requiem-for-the-phantom.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Призрак: Реквием по Призраку / Phantom: Requiem for the Phantom"></div>
+		<h2><a href="/anime/phantom-requiem-for-the-phantom/" title="Призрак: Реквием по Призраку">Призрак: Реквием по Призраку</a></h2>
+		<h3 class='dopeng'>Phantom: Requiem for the Phantom</h3>
+		<span class="reiting-inline"> 6.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/anime/" title="Все рецензии в рубрике Война">Война</a> опубликовано 10 марта 2014 в 11:55
+		</div>
+		<p>«Инферно» устраняет боссов американской мафии стремясь к власти. 
+«Фантомы» - первоклассные киллеры, не знающие страха и поражений. О них 
+мало известно, ведь свидетелей они не оставляют.</p>
+	</div>
+</li><li class="media popupfade" data-id="995">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/i-spit-on-your-grave-2.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Я плюю на ваши могилы 2 / I Spit on Your Grave 2"></div>
+		<h2><a href="/triller/i-spit-on-your-grave-2/" title="Я плюю на ваши могилы 2">Я плюю на ваши могилы 2</a></h2>
+		<h3 class='dopeng'>I Spit on Your Grave 2</h3>
+		<span class="reiting-inline"> 5.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/triller/" title="Все рецензии в рубрике Триллер">Триллер</a> опубликовано 10 марта 2014 в 11:01
+		</div>
+		<p>Кэти — начинающая модель. Без хорошего портфолио в такой сфере просто
+ никуда. Фотосессия стоит безумно дорого, а денег нет. Поиски 
+альтернативы приводят девушку в небольшую студию, где фотографии обещают
+ бесплатно. Как потом окажется, бесплатно их можно будет получить только
+ в случае съёмки обнаженной.</p>
+	</div>
+</li><li class="media popupfade" data-id="993">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/new-years-eve.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="«Старый» Новый год / New Year\'s Eve"></div>
+		<h2><a href="/komediya/new-years-eve/" title="«Старый» Новый год">«Старый» Новый год</a></h2>
+		<h3 class='dopeng'>New Year's Eve</h3>
+		<span class="reiting-inline"> 7.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/komediya/" title="Все рецензии в рубрике Комедия">Комедия</a> опубликовано 03 марта 2014 в 15:38
+		</div>
+		<p>События фильма разворачиваются в новогоднюю ночь на Таймс-сквер. 
+Судьбы нескольких жителей  Нью-Йорка тесно переплетаются, а зритель 
+может понаблюдать за историей умирающего в больнице человека, 
+секретарши, уволившейся с работы, продюсера ночного шоу, шеф-повара и 
+музыканта.</p>
+	</div>
+</li><li class="media popupfade" data-id="989">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/runner-runner.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Va-банк / Runner Runner"></div>
+		<h2><a href="/triller/runner-runner/" title="Va-банк">Va-банк</a></h2>
+		<h3 class='dopeng'>Runner Runner</h3>
+		<span class="reiting-inline"> 7.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/triller/" title="Все рецензии в рубрике Триллер">Триллер</a> опубликовано 28 февраля 2014 в 15:14
+		</div>
+		<p>Столкнувшись с трудностями в оплате учёбы, Ричи решает попробовать 
+свои силы в азартном бизнесе. В самый ответственный момент удача 
+изменила ему, и он спустил все заработанные деньги. В поисках 
+справедливости Ричи отправляется на Коста-Рику. Владелец онлайн-казино 
+увидел в нем родственную душу и предлагает работать вместе.</p>
+	</div>
+</li><li class="media popupfade" data-id="998">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/thor-the-dark-world.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Тор 2: Царство тьмы / Thor: The Dark World"></div>
+		<h2><a href="/fentezi/thor-the-dark-world/" title="Тор 2: Царство тьмы">Тор 2: Царство тьмы</a></h2>
+		<h3 class='dopeng'>Thor: The Dark World</h3>
+		<span class="reiting-inline"> 7.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/fentezi/" title="Все рецензии в рубрике Фэнтези">Фэнтези</a> опубликовано 24 февраля 2014 в 16:58
+		</div>
+		<p>Раз в пять тысяч лет девять миров сходятся в одну ось и 
+пространственная связь между ними истончается. В мирах образуются 
+пространственные туннели, позволяющие простым смертным путешествовать по
+ ним.</p><p>В результате прошлого «схождения» миры чуть&nbsp;не&nbsp;уничтожил&nbsp;Темный&nbsp;эльф&nbsp;по имени Малекит. Его народ создал идеальное 
+оружие — Эфир, перед мощью которого не устоит даже Асгард. Судьба мира в
+ тот день была спасена, а&nbsp;злодей&nbsp;изгнан. Во вселенной воцарился мир.</p>
+	</div>
+</li><li class="media popupfade" data-id="990">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/kuhnya.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Кухня"></div>
+		<h2><a href="/serial/kuhnya/" title="Кухня">Кухня</a></h2>
+		<h3 class='dopeng'></h3>
+		<span class="reiting-inline"> 8.5</span> 2 голоса  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/serial/" title="Все рецензии в рубрике Сериал">Сериал</a> опубликовано 21 февраля 2014 в 12:44
+		</div>
+		<p>Макс Лавров хочет стать профессиональным поваром. Для осуществления 
+своей мечты&nbsp;он решает устроиться в самый дорогой ресторан Москвы. Задача
+ выполнена, мечта сбылась, работа получена, но не всё так просто, как 
+изначально казалось.</p><p>Шеф-повар Виктор — мастер своего дела. Он 
+знает, как приготовить блюдо, которое понравится самому искушенному 
+посетителю. Обратная сторона медали — алкоголь и страсть к азартным 
+играм.</p>
+	</div>
+</li><li class="media popupfade" data-id="997">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/2-guns.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Два ствола / 2 Guns"></div>
+		<h2><a href="/boevik/2-guns/" title="Два ствола">Два ствола</a></h2>
+		<h3 class='dopeng'>2 Guns</h3>
+		<span class="reiting-inline"> 5.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/boevik/" title="Все рецензии в рубрике Боевик">Боевик</a> опубликовано 21 февраля 2014 в 11:44
+		</div>
+		<p>Фильм рассказывает зрителю историю о двух грабителях банков, которые 
+на самом деле не те, кем кажутся. Один из них — агент по борьбе с 
+наркотиками, второй — военный. Грабители берут банк в надежде получить 
+три миллиона долларов. Правда, денег там оказалось гораздо больше, и на 
+парней начинается настоящая охота.</p>
+	</div>
+</li><li class="media popupfade" data-id="996">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/ostrov-vezeniya.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Остров везения"></div>
+		<h2><a href="/komediya/ostrov-vezeniya/" title="Остров везения">Остров везения</a></h2>
+		<h3 class='dopeng'></h3>
+		<span class="reiting-inline"> 4.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/komediya/" title="Все рецензии в рубрике Комедия">Комедия</a> опубликовано 18 февраля 2014 в 15:04
+		</div>
+		<p>Лайнер посреди Тихого океана. На борту полуобнаженные красотки, 
+участвующие в конкурсе красоты. Роман — звезда телевидения в прошлом, а 
+ныне ведущий дешевых свадеб. Отправляясь в круиз, он думал, что будет 
+отдыхать, но судьба преподносит ему неожиданный подарок, отдыха не 
+будет, будет только работа.</p>
+	</div>
+</li><li class="media popupfade" data-id="994">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/the-hunger-games-catching-fire.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Голодные игры: И вспыхнет пламя / The Hunger Games: Catching Fire"></div>
+		<h2><a href="/fantastika/the-hunger-games-catching-fire/" title="Голодные игры: И вспыхнет пламя">Голодные игры: И вспыхнет пламя</a></h2>
+		<h3 class='dopeng'>The Hunger Games: Catching Fire</h3>
+		<span class="reiting-inline"> 7.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/fantastika/" title="Все рецензии в рубрике Фантастика">Фантастика</a> опубликовано 14 февраля 2014 в 15:01
+		</div>
+		<p>Одержав победу на безжалостных Голодных играх, Китнисс и Пит 
+возвращаются домой. Им обещали, что победители навсегда войдут в 
+историю. Своим отказом играть по правилам они сами лишили себя спокойной
+ жизни. Грядут новые игры, где на арене должны будут столкнуться 
+победители прошлых лет. Здесь нет места неудачникам и неопытным игрокам.
+ Главным героям будут противостоять профессиональные убийцы. А глава 
+Капитолия проследит, чтобы сражение было захватывающим и победа никому 
+не досталась легкой ценой.</p>
+	</div>
+</li><li class="media popupfade" data-id="992">
+	<div class="media-body">
+		<div class="block_tizer"><div class="disc-cover"><ins></ins></div>
+<img src="/index.php?thumb=uploads/images/elysium.jpg&amp;width=150&amp;height=230&amp;mode=single" class="cover" alt="Элизиум: Рай не на Земле / Elysium"></div>
+		<h2><a href="/fantastika/elysium/" title="Элизиум: Рай не на Земле">Элизиум: Рай не на Земле</a></h2>
+		<h3 class='dopeng'>Elysium</h3>
+		<span class="reiting-inline"> 6.0</span> 1 голос  
+		
+		<div class="time">
+			В рубрике <a rel="nofollow" href="/fantastika/" title="Все рецензии в рубрике Фантастика">Фантастика</a> опубликовано 12 февраля 2014 в 15:53
+		</div>
+		<p>В 2154 году самая богатая часть населения Земли живёт в космосе на 
+станции Элизиум. Уделом бедных стало существование на перенаселенной 
+разрушенной планете. Министр обороны Делакур способна на всё ради 
+сохранения роскошного образа жизни граждан станции.</p><p>Макс — 
+неудачник, который работает на заводе по сборке андроидов. Он получил 
+смертельную дозу радиации, и жить осталось всего пять дней. Чтобы спасти 
+свою жизнь, Макс соглашается на самое большое приключение в своей жизни.</p>
+	</div>
+</li></ul>
+<div class="pagination pagination-small pagination-centered"><ul><li class="active"><a>1</a></li><li> <a class="pnav" href="/apage-2/">2</a> </li><li> <a class="pnav" href="/apage-3/">3</a> </li><li> <a class="pnav" href="/apage-4/">4</a> </li><li> <a class="pnav" href="/apage-5/">5</a> </li><li> <a class="pnav" href="/apage-2/">вперед</a> </li><li> <a class="pnav" href="/apage-68/">последняя »</a> </li></ul></div>
+<div class="middle_context"><!-- Яндекс.Директ -->
+<script type="text/javascript">
+//<![CDATA[
+yandex_partner_id = 78609;
+yandex_stat_id=1;
+yandex_site_bg_color = 'FFFFFF';
+yandex_site_charset = 'utf-8';
+yandex_ad_format = 'direct';
+yandex_font_size = 1.1;
+yandex_direct_type = 'flat';
+yandex_direct_limit = 2;
+yandex_direct_title_font_size = 3;
+yandex_direct_title_color = '990000';
+yandex_direct_url_color = '717276';
+yandex_direct_all_color = '717276';
+yandex_direct_text_color = '717276';
+yandex_direct_hover_color = 'CC0000';
+yandex_direct_favicon = true;
+document.write('<sc'+'ript type="text/javascript" src="http://an.yandex.ru/system/context.js"></sc'+'ript>');
+//]]>
+</script></div>
+					
+					<div class="middle_bar_context">
+											</div>
+				</div>
+			</div>
+			<div class="user-top"><ul class="thumbnails"><li class="span1"><a href="/user/1/" title="Максим" class="tiptip thumbnail"><img src="/uploads/users/f_06c59e96ecbf5b41a76f4a9edf4001ef1.jpg" alt="Максим"></a></li><li class="span1"><a href="/user/413/" title="Serg" class="tiptip thumbnail"><img src="/uploads/users/0cf1d47f1325606e8f54e72696a9bdfb.jpg" alt="Serg"></a></li><li class="span1"><a href="/user/298/" title="Марина" class="tiptip thumbnail"><img src="/uploads/users/1600_0448.jpg" alt="Марина"></a></li><li class="span1"><a href="/user/665/" title="Hesta" class="tiptip thumbnail"><img src="/uploads/users/f_c19ccbb7f5bb021babf2306cda32a46d665.jpg" alt="Hesta"></a></li><li class="span1"><a href="/user/139/" title="Нина" class="tiptip thumbnail"><img src="/uploads/users/f_20100508102240.jpg" alt="Нина"></a></li><li class="span1"><a href="/user/83/" title="Людмила" class="tiptip thumbnail"><img src="/uploads/users/1280x960_0039.jpg" alt="Людмила"></a></li><li class="span1"><a href="/user/772/" title="Катя" class="tiptip thumbnail"><img src="/uploads/users/f_a7eb853632312d7442607ac6d633fdc4772.jpg" alt="Катя"></a></li><li class="span1"><a href="/user/132/" title="Sergey" class="tiptip thumbnail"><img src="/uploads/users/appa_designs_fshchr_avatar_by_imaginism.jpg" alt="Sergey"></a></li><li class="span1"><a href="/user/486/" title="alena" class="tiptip thumbnail"><img src="/uploads/users/91.jpg" alt="alena"></a></li><li class="span1"><a href="/user/443/" title="Марина" class="tiptip thumbnail"><img src="/uploads/users/f_7b3712cbbcea91ff28eb6bf607025900443.jpg" alt="Марина"></a></li><li class="span1"><a href="/user/574/" title="Ирина" class="tiptip thumbnail"><img src="/uploads/users/f_20100805195002574.jpg" alt="Ирина"></a></li><li class="span1"><a href="/user/899/" title="wladann" class="tiptip thumbnail"><img src="/uploads/users/f_1276504ec0a7f5a0530792fa467feddb899.jpg" alt="wladann"></a></li></ul><div class="pull-right">всего активных <a href="/users/">144</a> пользователя</div><div class="clearfix"></div></div>						<footer>
+				<div class="footer-block">
+					<ul class="breadcrumb">
+						<li class="active">История проекта</li>
+					</ul>
+					<div class="archive-line"><div class='date-line'></div>
+  <div class='year'>
+    2008</div><div class='month'>Январь</div><div class='month'>Февраль</div><div class='month'>Март</div><div class='month'>Апрель</div><div class='month'>Май</div><div class='month'><a href='/arhive/06/2008/' title='Июнь (16)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2008/' title='Июль (19)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2008/' title='Август (3)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2008/' title='Сентябрь (19)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2008/' title='Октябрь (18)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2008/' title='Ноябрь (25)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2008/' title='Декабрь (12)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2009
+  </div><div class='month'><a href='/arhive/01/2009/' title='Январь (19)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2009/' title='Февраль (15)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2009/' title='Март (14)' class='tiptip'>Март</a></div><div class='month'><a href='/arhive/04/2009/' title='Апрель (10)' class='tiptip'>Апрель</a></div><div class='month'><a href='/arhive/05/2009/' title='Май (22)' class='tiptip'>Май</a></div><div class='month'><a href='/arhive/06/2009/' title='Июнь (13)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2009/' title='Июль (19)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2009/' title='Август (11)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2009/' title='Сентябрь (10)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2009/' title='Октябрь (14)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2009/' title='Ноябрь (16)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2009/' title='Декабрь (18)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2010
+  </div><div class='month'><a href='/arhive/01/2010/' title='Январь (17)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2010/' title='Февраль (23)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2010/' title='Март (16)' class='tiptip'>Март</a></div><div class='month'><a href='/arhive/04/2010/' title='Апрель (12)' class='tiptip'>Апрель</a></div><div class='month'><a href='/arhive/05/2010/' title='Май (15)' class='tiptip'>Май</a></div><div class='month'><a href='/arhive/06/2010/' title='Июнь (9)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2010/' title='Июль (11)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2010/' title='Август (15)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2010/' title='Сентябрь (13)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2010/' title='Октябрь (13)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2010/' title='Ноябрь (14)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2010/' title='Декабрь (13)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2011
+  </div><div class='month'><a href='/arhive/01/2011/' title='Январь (11)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2011/' title='Февраль (12)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2011/' title='Март (13)' class='tiptip'>Март</a></div><div class='month'><a href='/arhive/04/2011/' title='Апрель (12)' class='tiptip'>Апрель</a></div><div class='month'><a href='/arhive/05/2011/' title='Май (17)' class='tiptip'>Май</a></div><div class='month'><a href='/arhive/06/2011/' title='Июнь (14)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2011/' title='Июль (11)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2011/' title='Август (8)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2011/' title='Сентябрь (9)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2011/' title='Октябрь (14)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2011/' title='Ноябрь (12)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2011/' title='Декабрь (10)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2012
+  </div><div class='month'><a href='/arhive/01/2012/' title='Январь (27)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2012/' title='Февраль (22)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2012/' title='Март (11)' class='tiptip'>Март</a></div><div class='month'><a href='/arhive/04/2012/' title='Апрель (9)' class='tiptip'>Апрель</a></div><div class='month'><a href='/arhive/05/2012/' title='Май (13)' class='tiptip'>Май</a></div><div class='month'><a href='/arhive/06/2012/' title='Июнь (13)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2012/' title='Июль (12)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2012/' title='Август (6)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2012/' title='Сентябрь (6)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2012/' title='Октябрь (12)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2012/' title='Ноябрь (13)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2012/' title='Декабрь (7)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2013
+  </div><div class='month'><a href='/arhive/01/2013/' title='Январь (16)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2013/' title='Февраль (11)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2013/' title='Март (14)' class='tiptip'>Март</a></div><div class='month'><a href='/arhive/04/2013/' title='Апрель (7)' class='tiptip'>Апрель</a></div><div class='month'><a href='/arhive/05/2013/' title='Май (10)' class='tiptip'>Май</a></div><div class='month'><a href='/arhive/06/2013/' title='Июнь (10)' class='tiptip'>Июнь</a></div><div class='month'><a href='/arhive/07/2013/' title='Июль (6)' class='tiptip'>Июль</a></div><div class='month'><a href='/arhive/08/2013/' title='Август (4)' class='tiptip'>Август</a></div><div class='month'><a href='/arhive/09/2013/' title='Сентябрь (5)' class='tiptip'>Сентябрь</a></div><div class='month'><a href='/arhive/10/2013/' title='Октябрь (8)' class='tiptip'>Октябрь</a></div><div class='month'><a href='/arhive/11/2013/' title='Ноябрь (5)' class='tiptip'>Ноябрь</a></div><div class='month'><a href='/arhive/12/2013/' title='Декабрь (6)' class='tiptip'>Декабрь</a></div>
+  <div class='date-line'></div>
+  <div class='year'>
+  2014
+  </div><div class='month'><a href='/arhive/01/2014/' title='Январь (9)' class='tiptip'>Январь</a></div><div class='month'><a href='/arhive/02/2014/' title='Февраль (8)' class='tiptip'>Февраль</a></div><div class='month'><a href='/arhive/03/2014/' title='Март (6)' class='tiptip'>Март</a></div><div class='month'>Апрель</div><div class='month'>Май</div><div class='month'>Июнь</div><div class='month'>Июль</div><div class='month'>Август</div><div class='month'>Сентябрь</div><div class='month'>Октябрь</div><div class='month'>Ноябрь</div><div class='month'>Декабрь</div></div>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div class="footer-block">
+					<ul class="breadcrumb">
+						<li class="active">Информация</li>
+					</ul>
+					
+					<div class="row">
+						<div class="span4">
+							<div class="zago">Навигация</div>
+							<div class="context">- основные разделы</div>
+							
+							<ul class="pull-left unstyled">
+								<li><a href="/info/">О проекте</a></li>
+								<li><a href="/news/">Новости проекта</a></li>
+								<li><a href="/map/">Карта проекта</a></li>
+								<li><a href="/poll/archives/" title="Опросы">Опросы</a></li>
+								<li><a href="/lament/" title="Книга отзывов и предложений">Книга отзывов</a></li>
+							</ul>	
+							<ul class="pull-left unstyled">	
+								<li><a href="/reklama/" title="Размещение рекламы">Рекламодателям</a></li>
+								<li><a href="/copyraiter/" title="Страница для авторов">Авторам</a></li>
+								<li><a href="/contacts/" title="Контактная информация">Написать письмо</a></li>
+								<li><a href="/partners/" title="Друзья">Друзья</a></li>
+							</ul>
+						</div>
+						
+						
+						<div class="offset4 copyright">
+							<div class="zago">Копирайты</div>
+							<div class="context">- для тех, кто в танке</div>
+							<div class="contextcopy">
+								&copy; 2008-2014 Кинокритик, ваш проводник в мире кино.<br /><br />
+								Материалы сайта защищены законом об авторских правах. Копирование возможно только с разрешения редакции Кинокритика.<br /><br />
+								Офис Чипа и Дэйла: <a href="mailto:info@critic.by" title="Для всех вопросов">info@critic.by</a>. Тел.: +37544 707-61-24
+								
+								<div class="reimax">  
+									Эмоциональная поддержка сайта <a href="http://reimax.ru/" title="Создание сайтов Беларусь" target="_blank"><img src="/templates/kino/images/reimax.jpg" alt="" class="thumbnail">веб студия Реймакс</a>, 2008<br />
+									Проект работает на <a href="http://reimax.ru/services/avecms/" title="Подробнее о системе AVE.CMS" target="_blank">AVE.CMS</a> 3.0
+								</div> 
+								
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2150137"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2150137/" rel="nofollow">
+<img src="http://counter.rambler.ru/top100.cnt?2150137" alt="Rambler's Top100">
+</a>
+</noscript>
+<!-- end of Top100 code -->
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.3;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'></a>")
+//--></script><!--/LiveInternet-->
+
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</div>	
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					Backbone.history.start();  // Запускаем HTML5 History push
+				});  
+			</script>
+			<div id="toptop">↑ Наверх</div>
+		</body>
+	</html>

@@ -25,7 +25,7 @@
                 <label class="control-label" for="">Фильм</label>
                 <div class="controls">
                     <input type="hidden" name="movie_id" value="<?=$movie_id?>">
-                    <input type="text" name="movie_name" value="<?=$movie_name?>" class="input-xlarge typeahead-movie">
+                    <input type="text" name="movie_name" value="<?=$movie_name?>" class="input-xlarge typeahead-movie" autocomplete="off">
                     <?php if(isset($messages['error']['movie_id'])): ?><span class="help-inline"><?=$messages['error']['movie_id']?></span><?php endif; ?>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <label class="control-label" for="">Автор</label>
                 <div class="controls">
                     <input type="hidden" name="author_id" value="<?=$author_id?>">
-                    <input type="text" name="author_name" value="<?=$author_name?>" class="input-medium typeahead-author">
+                    <input type="text" name="author_name" value="<?=$author_name?>" class="input-medium typeahead-author" autocomplete="off">
                     <?php if(isset($messages['error']['author_id'])): ?><span class="help-inline"><?=$messages['error']['author_id']?></span><?php endif; ?>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 <label class="control-label" for="">Источник</label>
                 <div class="controls">
                     <input type="hidden" name="source_id" value="<?=$source_id?>">
-                    <input type="text" name="source_name" value="<?=$source_name?>" class="input-medium typeahead-source">
+                    <input type="text" name="source_name" value="<?=$source_name?>" class="input-medium typeahead-source" autocomplete="off">
                     <?php if(isset($messages['error']['source_id'])): ?><span class="help-inline"><?=$messages['error']['source_id']?></span><?php endif; ?>
                 </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="control-group <?php if(isset($messages['error']['original_url'])): ?>error<?php endif; ?>">
                 <label class="control-label" for="original_url">Рецензия (URL)</label>
                 <div class="controls">
-                    <input type="text" class="input-medium" name="original_url" value="<?=$original_url?>">
+                    <input type="text" class="input-xlarge" name="original_url" value="<?=$original_url?>">
                     <?php if(isset($messages['error']['original_url'])): ?><span class="help-inline"><?=$messages['error']['original_url']?></span><?php endif; ?>
                 </div>
             </div>

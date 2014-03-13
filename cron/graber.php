@@ -56,12 +56,12 @@ try {
     //получение содержимого страницы с рецензией
     $RollingCurl->get($reviewData->original_url);
     $response = $RollingCurl->execute();
-
+    
     //преобразование кодировок
     $response['output'] = iconv(ConfigParse::$reviewSources[$domain]['encoding'], 'UTF-8', $response['output']);
     $htmlContent = mb_convert_encoding($response['output'], 'HTML-ENTITIES', 'UTF-8');
     
-    //var_dump($response);exit;
+    //var_dump($response['output']);exit;
        
     $Crawler = new Crawler($htmlContent);
     $NodesList = $Crawler->filterXPath(ConfigParse::$reviewSources[$domain]['xpath']);
