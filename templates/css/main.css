@@ -6,7 +6,7 @@
 .content-block p {
     /*font-size: 14pt;*/
     /*font-family: serif;*/
-
+    text-align: justify;
 }
 
 .content-block p img {
