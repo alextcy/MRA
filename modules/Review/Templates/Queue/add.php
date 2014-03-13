@@ -1,5 +1,8 @@
 <?php /*добавление ссылок в очередь для парсинга рецензий */ ?>
 
+<script type="text/javascript" src="<?=$templateMainFolder?>/js/bootstrap-datepicker.js"></script>
+<link href="<?=$templateMainFolder?>/css/datepicker.css" rel="stylesheet">
+
 <script type="text/javascript" src="<?=$templateFolder?>/js/queue.js"></script>
 
 <div class="row-fluid">
@@ -48,7 +51,7 @@
             <div class="control-group <?php if(isset($messages['error']['original_date'])): ?>error<?php endif; ?>">
                 <label class="control-label" for="original_date">Дата оригинала</label>
                 <div class="controls">
-                    <input type="text" class="input-medium" name="original_date" value="<?=$original_date?>" placeholder="YYYY-MM-DD">
+                    <input type="text" class="input-medium" id="original_date" name="original_date" value="<?=$original_date?>" placeholder="YYYY-MM-DD">
                     <?php if(isset($messages['error']['original_date'])): ?><span class="help-inline"><?=$messages['error']['original_date']?></span><?php endif; ?>
                 </div>
             </div>    

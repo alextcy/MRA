@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    
+    
+    $('#original_date').datepicker({
+        format: 'yyyy-mm-dd',
+        weekStart: 1,
+        viewMode: 2
+    });
+    
     var movies  = [];
     var authors = [];
     var sources = [];
