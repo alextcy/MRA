@@ -38,6 +38,21 @@ class ReviewQueue extends Model
         return (int)$record->review_id;
     }
     
+    public function addToQueue($reviewId)
+    {
+        $record2 = ORM::for_table($this->table)->find_one($reviewId);
+        
+        if($record2 !== false) {
+            throw new \core\GException('Unable add review to queue. Record allready exist: '.$reviewId);
+        }
+        
+        $record = ORM::for_table($this->table)->create();
+        $record->set('review_id', $reviewId);
+        $record->set('date_add', time());
+        $record->save();
+        
+        return true;
+    }
     
     /**
      * @param integer $domainId

@@ -124,7 +124,11 @@ class Reviews extends Model
         return $table->find_one($reviewId);
     }
     
-    
+    public function create()
+    {
+        return ORM::for_table($this->table)->create();
+    }
+
     public function edit($reviewId)
     {
         $record = ORM::for_table($this->table)->find_one($reviewId);
@@ -137,47 +141,5 @@ class Reviews extends Model
     }
 
 
-    /*public function edit($reviewId, $authorId=null, $movieId=null, $sourceId=null, $originalUrl=null, $originalDate=null, $content=null, $visible=null, $dateAdd=null)
-    {
-        $record = ORM::for_table($this->table)->find_one($reviewId);
-        
-        if($record === false) {
-            throw new \core\GException('No record # '.$reviewId.' in: '.$this->table);
-        }
-        
-        if(!is_null($authorId)) {
-            $record->author_id = $authorId;
-        }
-        
-        if(!is_null($movieId)) {
-            $record->movie_id = $movieId;
-        }
-        
-        if(!is_null($sourceId)) {
-            $record->source_id = $sourceId;
-        }
-        
-        if(!is_null($originalUrl)) {
-            $record->original_url = $originalUrl;
-        }
-        
-        if(!is_null($originalDate)) {
-            $record->original_date = $originalDate;
-        }
-        
-        if(!is_null($content)) {
-            $record->content = $content;
-        }
-        
-        if(!is_null($visible)) {
-            $record->visible = $visible;
-        }
-        
-        if(!is_null($dateAdd)) {
-            $record->date_add = $dateAdd;
-        }
-        
-        $record->save();
-        return true;
-    }*/
+    
 }

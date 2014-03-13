@@ -4,11 +4,16 @@
 }
 
 .content-block p {
-    font-size: 14pt;
+    /*font-size: 14pt;*/
     /*font-family: serif;*/
 
 }
 
+.content-block p img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
 .poster-mini {
     width: 80px;
 }

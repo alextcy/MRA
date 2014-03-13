@@ -15,7 +15,6 @@
     <script src="/templates/js/jquery-min.js"></script>
     <script src="/templates/js/bootstrap.min.js"></script>
     <script src="/templates/js/main.js"></script>
-    
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -25,9 +24,16 @@
         padding: 9px 0;
       }
 
-      
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
     </style>
-    <?php /*<link href="/templates/css/bootstrap-responsive.css" rel="stylesheet">*/ ?>
+    <link href="/templates/css/bootstrap-responsive.css" rel="stylesheet">
         
   </head>
 
@@ -56,15 +62,13 @@
       </div>
     </div>
 
-    <?php /* <div class="container-fluid">*/?>
-    <div class="container">    
+    <div class="container-fluid">
       <div class="row-fluid">
 
-        <?php /*  
         <div class="span2">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              
+              <?php /*
               <li class="nav-header">Темы</li>
               
               <li><a href="/subjects">Дерево тематик</a></li>
@@ -75,9 +79,9 @@
               <li><a href="/domains/redirect">Редирект доменов</a></li>
               <li class="nav-header">Регистраторы</li>
               <li><a href="/registrars">Список регистраторов</a></li>
-              
+              */ ?>
 
-              <li class="active"><a href="#">Link</a></li>
+              <?php /*<li class="active"><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li class="nav-header">Sidebar</li>
               <li><a href="#">Link</a></li>
@@ -89,13 +93,12 @@
               <li class="nav-header">Sidebar</li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>*/ ?>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        */ ?>
 
-        <div class="span12">
+        <div class="span10">
 
             
             <?=$content?>

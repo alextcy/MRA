@@ -6,7 +6,7 @@
         </div>
         
         <div class="row-fluid">
-            <div class="span10 content-block">
+            <div class="span12 content-block">
                 
                     <blockquote>
                         <p><a href="/author/<?=$Review->author_id?>" title="Рецензии критика"><?=$Review->author_name?></a></p>
