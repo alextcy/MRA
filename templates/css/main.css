@@ -6,6 +6,8 @@
 .content-block p {
     /*font-size: 14pt;*/
     /*font-family: serif;*/
+    font-size: 15px;
+    font-family: Tahoma;
     text-align: justify;
 }
 

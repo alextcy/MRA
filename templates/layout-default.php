@@ -128,7 +128,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Satellite 2013</p>
+        <p>&copy; Mra 2013</p>
       </footer>
 
     </div><!--/.fluid-container-->
