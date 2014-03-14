@@ -73,9 +73,26 @@ class ConfigParse
             'xpath'    => "//div[@class='text']/div[@id='selectable-content']/p |  //div[@class='text']/div[@id='selectable-content']/div[@class='photo']//img",
             'encoding' => 'UTF-8'
         ),
+        //(дата в анонсе стоит)
+        'www.kinoafisha.info' => array(
+            'xpath'    => "//div[@class='review-text']/p[not(@class='attention')] | //div[@class='description']/a[@id='poster']/img",
+            'encoding' => 'WINDOWS-1251'
+        ),
+        'meownauts.com' => array(
+            'xpath'    => "//div[@class='entry clearfix']//p |  //div[@class='entry clearfix']/p//img",
+            'encoding' => 'UTF-8'
+        ),
+        'www.uralweb.ru' => array(
+            'xpath'    => "//div[@id='article_body']/p | //div[@id='article_body']/p//img",
+            'encoding' => 'UTF-8'
+        ),
         
         
         
+        # 
+        
+        #  25-k.com только в ручном режиме (две рецензии сразу и невозможно парсить)
+        #  
         
     );
     
