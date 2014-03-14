@@ -69,6 +69,11 @@ class ConfigParse
             'xpath'    => "//div[@class='recenz']/p | //div[@class='tizer'][1]//div[@class='block_tizer_full']/img[not(@alt='')]",
             'encoding' => 'UTF-8'
         ),
+        'www.film.ru' => array(
+            'xpath'    => "//div[@class='text']/div[@id='selectable-content']/p |  //div[@class='text']/div[@id='selectable-content']/div[@class='photo']//img",
+            'encoding' => 'UTF-8'
+        ),
+        
         
         
         
