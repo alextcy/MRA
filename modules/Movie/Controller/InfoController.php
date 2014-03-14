@@ -37,7 +37,7 @@ class InfoController extends Controller
             $this->View->setVar('Movie'        , $Movie);
             $this->View->setVar('reviewsList'  , $reviewsList);
             $this->View->setVar('reviewsCount' , $reviewsCount);
-            $this->View->setVar('pager'        , $this->_getReviewPager($page, $reviewsCount, \Config::REVIEWS_ON_PAGE, '/movie/'.$Movie->url));
+            $this->View->setVar('pager'        , $this->_getReviewPager($page, $reviewsCount, \Config::REVIEWS_ON_PAGE, '/movie/'.$Movie->alias));
 
             return $this->View->fetch($this->templatePath. '/Info/index');
 

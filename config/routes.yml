@@ -7,6 +7,10 @@ movie_info:
     path: /movie/{alias}
     defaults:  { _controller: Movie:Info:index }
 
+movies:
+    path: /movies
+    defaults:  { _controller: Movie:Movies:index }
+
 #----REVIEW---------------------------------------    
 review_info:
     path: /review/{id}
