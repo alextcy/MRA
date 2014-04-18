@@ -73,7 +73,7 @@ try {
         if($NodeElem->nodeName == 'img') {
 
             $uploadFolder = '/upload/reviews/'.  date('Y', time()) .'/'. date('m', time()) .'/'. date('d', time()).'/'.$Movie->alias.'/';
-
+            
             $imageUrlData = parse_url($NodeElem->getAttribute('src'));
             if(!array_key_exists('host', $imageUrlData)) {
                 if($domain == 'www.exler.ru') {
@@ -84,6 +84,10 @@ try {
                 
             } else {
                 $imageUrl = $NodeElem->getAttribute('src');
+                
+                if($domain == 'www.vedomosti.ru') {
+                    $imageUrl = 'http:'.$NodeElem->getAttribute('src');
+                }
             }
             
             $ImageGrabber->setImageUrl($imageUrl);

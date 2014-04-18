@@ -86,8 +86,10 @@ class ConfigParse
             'xpath'    => "//div[@id='article_body']/p | //div[@id='article_body']/p//img",
             'encoding' => 'UTF-8'
         ),
-        
-        
+        'www.vedomosti.ru' => array(
+            'xpath'    => "//div[@class='article_text']//p | //div[@class='article_gallery']/img",
+            'encoding' => 'WINDOWS-1251'
+        ),
         
         # 
         
