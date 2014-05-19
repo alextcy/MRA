@@ -10,6 +10,10 @@ movie_info:
 movies:
     path: /movies
     defaults:  { _controller: Movie:Movies:index }
+    
+movie_add:
+    path: /movie/add
+    defaults:  { _controller: Movie:Manage:add }    
 
 #----REVIEW---------------------------------------    
 review_info:

@@ -90,12 +90,24 @@ class ConfigParse
             'xpath'    => "//div[@class='article_text']//p | //div[@class='article_gallery']/img",
             'encoding' => 'WINDOWS-1251'
         ),
+        'www.thr.ru' => array(
+            'xpath'    => "//main/section[@class='content']//p | //main/section[@class='content']//figure//img",
+            'encoding' => 'WINDOWS-1251'
+        ),
+        'www.pravda.ru' => array(
+            'xpath'    => "//div[@id='article']//p | //div[@id='article']//div/img[@class='article_image']",
+            'encoding' => 'UTF-8'
+        ),
+        
         
         # 
         
         #  25-k.com только в ручном режиме (две рецензии сразу и невозможно парсить)
         #  
         
+        #www.tramvision.ru - все на таблицах нерелаьно парсить
+        #www.timeout.ru - очень краткие зарисовки
+        #www.rg.ru - нихрена найти нельзя
     );
     
 }
